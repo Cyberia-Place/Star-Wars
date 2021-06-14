@@ -13,6 +13,9 @@ const injectContext = PassedComponent => {
 			getState({
 				getStore: () => state.store,
 				getActions: () => state.actions,
+				// No entiendo por qué los parámetros de getState no dejan de funcionar,
+				// si le esta pasando el mismo objeto que tiene el getState pero sin definirle los parametros,
+				// cuando los use en actions deberian estar indefinidos
 				setStore: updatedStore =>
 					setState({
 						store: Object.assign(state.store, updatedStore),
@@ -31,6 +34,7 @@ const injectContext = PassedComponent => {
 			 * state.actions.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
+			state.actions.loadSomeData();
 		}, []);
 
 		// The initial value for the context is not null anymore, but the current state of this component,
