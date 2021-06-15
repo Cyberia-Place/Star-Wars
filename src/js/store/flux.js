@@ -8,21 +8,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			loadSomeData: () => {
 				// People
-				fetch("https://www.swapi.tech/api/people")
+				fetch("https://www.swapi.tech/api/planets")
 					.then(res => res.json())
 					.then(data => {
 						localStorage.setItem("planets", JSON.stringify(data.results));
 						setStore({ planets: data.results });
-						console.log(store);
 					})
 					.catch(error => console.log(error));
 				// Planets
-				fetch("https://www.swapi.tech/api/planets")
+				fetch("https://www.swapi.tech/api/people")
 					.then(res => res.json())
 					.then(data => {
 						localStorage.setItem("characters", JSON.stringify(data.results));
 						setStore({ characters: data.results });
-						console.log(store);
 					})
 					.catch(error => console.log(error));
 			},
