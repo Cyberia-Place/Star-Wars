@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
+import { CardList } from "../component/card";
 
 export const Home = () => {
 	useEffect(() => {
@@ -11,7 +12,7 @@ export const Home = () => {
 
 	return (
 		<div>
-			<div className="d-inline overflow-auto vh-15 border">Hola</div>
+			<div className="d-inline overflow-auto vh-15 border">{/* <CardList type={store.} /> */}</div>
 		</div>
 	);
 };

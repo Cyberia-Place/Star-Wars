@@ -1,22 +1,16 @@
 import React, { useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 
-export const Card = (props) => {
-    useEffect(() => {
-        fetch("https://www.swapi.tech/api/people/" + `${props}`)
-        .then(resp => resp.json())
-        .then(data => )
-    }, [props])
+export const CardList = () => {
+	const { store, actions } = useContext(Context);
 
-    const { store, actions } = useContext(Context);
+	// const cardList = store.characters.map((element, i) => {
+	// 	return <h1>Hello there</h1>;
+	// });
 
-    const cardList = store.characters
-
-    return (
-        <div>
-            <div className="d-inline">
-
-            </div>
-        </div>
-    );
+	return (
+		<div>
+			<div className="d-inline">{cardList}</div>
+		</div>
+	);
 };
