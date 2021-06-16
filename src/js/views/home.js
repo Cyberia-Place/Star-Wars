@@ -12,9 +12,12 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div>
+		<div style={{ width: "100%" }}>
 			<CardPersonajes />
 			<CardPlanetas />
+			<br />
+			<br />
+			<br />
 		</div>
 	);
 };

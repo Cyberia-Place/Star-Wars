@@ -23,10 +23,26 @@ export const CardView = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-							<img src={Object.values(img[params.theid])} style={{ height: "800px", width: "600px" }} />
+							<img
+								src={Object.values(img[params.theid])}
+								style={{ height: "400px", width: "500px", objectFit: "cover" }}
+							/>
 						</div>
 						<div className="col-6">
-							<h1>{info.name}</h1>
+							<h1 className="text-center">{info.name}</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sem ac lectus
+								accumsan egestas in a arcu. Pellentesque habitant morbi tristique senectus et netus et
+								malesuada fames ac turpis egestas. Aenean consequat consequat convallis. Maecenas vitae
+								mi semper, vulputate lorem eu, mollis elit.{" "}
+							</p>
+							<p>
+								Mauris lobortis nibh sit amet pretium blandit. Curabitur maximus, justo vel posuere
+								finibus, arcu dui tincidunt ante, vel varius leo massa non felis. Donec vel dolor lorem.
+								Vivamus eget erat augue. Aliquam bibendum vel lectus vitae dignissim. Aenean cursus
+								fermentum pellentesque. Aenean vitae purus eget orci vestibulum tempor id quis risus. In
+								hac habitasse platea dictumst.
+							</p>
 						</div>
 					</div>
 					<div className="row">

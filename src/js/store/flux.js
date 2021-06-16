@@ -3,7 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			planets: [],
 			characters: [],
-			favourites: []
+			favorites: []
 		},
 		actions: {
 			loadSomeData: () => {
@@ -29,6 +29,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 					planets: JSON.parse(localStorage.getItem("planets")),
 					characters: JSON.parse(localStorage.getItem("characters"))
 				});
+			},
+			addFavorite: newFavorite => {
+				setStore({
+					favorites: [...getStore().favorites, newFavorite]
+				});
+				console.log(getStore().favorites);
 			}
 		}
 	};

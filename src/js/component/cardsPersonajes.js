@@ -8,12 +8,17 @@ export const CardPersonajes = () => {
 
 	const cardList = store.characters.map((element, i) => {
 		return (
-			<div key={i} className="col-4">
+			<div key={i} style={{ width: "350px", height: "350" }} className="col-4">
 				<div className="card mx-1">
-					<img src={Object.values(img[i])} className="card-img-top" alt="..." />
+					<img
+						src={Object.values(img[i])}
+						style={{ height: "150px", objectFit: "cover" }}
+						className="card-img-top"
+						alt="..."
+					/>
 					<div className="card-body">
 						<h5 className="card-title">{element.name}</h5>
-						<p className="card-text">
+						<p className="card-text text-truncate">
 							Some quick example text to build on the card title and make up the bulk of the cards
 							content.
 						</p>
@@ -22,11 +27,21 @@ export const CardPersonajes = () => {
 								Go somewhere
 							</button>
 						</Link>
+						<button
+							type="button"
+							onClick={() => actions.addFavorite(store.characters[i].name)}
+							className="btn btn-warning float-right">
+							Warning
+						</button>
 					</div>
 				</div>
 			</div>
 		);
 	});
 
-	return <div className="row overflow-auto flex-nowrap p-2">{cardList}</div>;
+	return (
+		<div className="row overflow-auto flex-nowrap my-4 mx-auto p-2" style={{ width: "90vw" }}>
+			{cardList}
+		</div>
+	);
 };
