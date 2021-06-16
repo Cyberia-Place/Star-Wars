@@ -8,7 +8,7 @@ export const Navbar = () => {
 
 	useEffect(
 		() => {
-			setDropdown([...dropdown, store.favorites]);
+			setDropdown(store.favorites);
 			console.log("funciona");
 			console.log(dropdown, favoritesList);
 		},
