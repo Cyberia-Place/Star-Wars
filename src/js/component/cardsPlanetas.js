@@ -51,7 +51,7 @@ export const CardPlanetas = () => {
 		return (
 			<div key={i} className="col-4">
 				<div className="card mx-1">
-					<img src={img[i]} className="card-img-top" alt="..." />
+					<img src={Object.values(img[i])} className="card-img-top" alt="..." />
 					<div className="card-body">
 						<h5 className="card-title">{element.name}</h5>
 						<p className="card-text">
