@@ -16,9 +16,11 @@ export const Navbar = () => {
 	);
 
 	const favoritesList = dropdown.map((element, i) => {
-		<a key={i} className="dropdown-item">
-			{element}
-		</a>;
+		return (
+			<a key={i} className="dropdown-item">
+				{element}
+			</a>
+		);
 	});
 
 	return (
