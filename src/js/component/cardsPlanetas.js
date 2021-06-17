@@ -1,10 +1,30 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import { img } from "../component/imagenes";
 
 export const CardPlanetas = () => {
 	const { store, actions } = useContext(Context);
+
+	useEffect(
+		() => {
+			setSelected(new Array(store.characters.length + 1).fill(""));
+		},
+		[store.characters]
+	);
+
+	const [selected, setSelected] = useState();
+	const selectButton = i => {
+		if (selected[i + 1] != i + 1) {
+			let newSelected = selected;
+			newSelected[i + 1] = i + 1;
+			setSelected([...newSelected]);
+		} else {
+			let newSelected = selected;
+			newSelected[i + 1] = "";
+			setSelected([...newSelected]);
+		}
+	};
 
 	const cardList = store.planets.map((element, i) => {
 		return (
@@ -24,14 +44,17 @@ export const CardPlanetas = () => {
 						</p>
 						<Link to={`/cardView/planets/${i + 1}`}>
 							<button type="button" className="btn btn-primary">
-								Go somewhere
+								Ver información
 							</button>
 						</Link>
 						<button
 							type="button"
-							onClick={() => actions.addFavorite(store.planets[i].name)}
+							onClick={() => {
+								actions.addFavorite(store.characters[i].name);
+								selectButton(i);
+							}}
 							className="btn btn-warning float-right">
-							Warning
+							{selected[i + 1] == i + 1 ? <i className="fas fa-heart" /> : <i className="far fa-heart" />}
 						</button>
 					</div>
 				</div>

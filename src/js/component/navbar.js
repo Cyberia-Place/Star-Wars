@@ -19,6 +19,12 @@ export const Navbar = () => {
 		return (
 			<a key={i} className="dropdown-item">
 				{element}
+				<button
+					type="button"
+					className="btn btn-primary btn-sm float-right"
+					onClick={() => actions.removeFavorite(element)}>
+					<i className="fas fa-trash" style={{ fontSize: "13px" }} />
+				</button>
 			</a>
 		);
 	});
@@ -38,10 +44,10 @@ export const Navbar = () => {
 						aria-haspopup="true"
 						aria-expanded="false">
 						Favorites
-						<span className="badge badge-secondary">0</span>
+						<span className="badge badge-secondary">{store.favorites.length}</span>
 					</button>
 					<div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						{favoritesList}
+						{favoritesList.length == 0 ? "(empty)" : favoritesList}
 					</div>
 				</div>
 			</div>
