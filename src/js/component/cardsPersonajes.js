@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import { img } from "../component/imagenes";
+import { imgCh } from "../component/imagenes";
 
 export const CardPersonajes = () => {
 	const { store, actions } = useContext(Context);
@@ -32,7 +32,7 @@ export const CardPersonajes = () => {
 			<div key={i} style={{ width: "350px", height: "350" }} className="col-4">
 				<div className="card mx-1">
 					<img
-						src={Object.values(img[i])}
+						src={Object.values(imgCh[i])}
 						style={{ height: "150px", objectFit: "cover" }}
 						className="card-img-top"
 						alt="..."
