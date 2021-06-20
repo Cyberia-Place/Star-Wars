@@ -1,80 +1,66 @@
 export const imgCh = [
 	{
-		LukeSkywalker:
-			"https://static.wikia.nocookie.net/esstarwars/images/d/d9/Luke-rotjpromo.jpg/revision/latest/scale-to-width-down/350?cb=20071214134433"
+		LukeSkywalker: "LukeSkywalker.jpg"
 	},
 	{
-		C3PO:
-			"https://static.wikia.nocookie.net/esstarwars/images/3/3f/C-3PO_TLJ_Card_Trader_Award_Card.png/revision/latest/scale-to-width-down/243?cb=20200718062140"
+		C3PO: "C3PO.jpg"
 	},
 	{
-		R2D2: "https://images-na.ssl-images-amazon.com/images/I/91BLCCISDTL._AC_SL1500_.jpg"
+		R2D2: "r2d2.jpg"
 	},
 	{
-		DarthVader:
-			"https://static.wikia.nocookie.net/hitlerparody/images/3/38/Darth-Vader.jpg/revision/latest?cb=20170109114532&path-prefix=es"
+		DarthVader: "DarthVader.jpg"
 	},
 
 	{
-		LeiaOrgana: "https://pbs.twimg.com/profile_images/1131990281413365760/eVXBPmA__400x400.jpg"
+		LeiaOrgana: "LeiaOrgana.jpg"
 	},
 	{
-		OwenLars:
-			"https://static.wikia.nocookie.net/esstarwars/images/e/eb/OwenCardTrader.png/revision/latest?cb=20180105223041"
+		OwenLars: "OwenLars.png"
 	},
 	{
-		BeruWhitesunlars:
-			"https://static.wikia.nocookie.net/esstarwars/images/c/cc/BeruCardTrader.png/revision/latest?cb=20171231024525"
+		BeruWhitesunlars: "BeruWhitesunLars.png"
 	},
 	{
-		R5D4:
-			"https://static.wikia.nocookie.net/esstarwars/images/2/2c/R5d4.jpg/revision/latest/top-crop/width/360/height/450?cb=20060315232602"
+		R5D4: "R5D4.jpg"
 	},
 	{
-		BiggsDarklighter:
-			"https://static.wikia.nocookie.net/esstarwars/images/0/00/BiggsHS-ANH.png/revision/latest?cb=20190110214931"
+		BiggsDarklighter: "BiggsDarklighter.png"
 	},
 	{
-		ObiWanKenobi:
-			"https://i0.wp.com/hipertextual.com/wp-content/uploads/2019/08/hipertextual-se-confirma-serie-obi-wan-kenobi-con-ewan-mcgregor-disney-2019892534-scaled.jpg?fit=2560%2C1707&ssl=1"
+		ObiWanKenobi: "ObiWanKenobi.png"
 	}
 ];
 
 export const imgPl = [
 	{
-		Tatooine: "src/img/Tatooine.png"
+		Tatooine: "Tatooine.png"
 	},
 	{
-		Alderaan: "https://imgur.com/undefined"
+		Alderaan: "Alderaan.jpg"
 	},
 	{
-		YavinIV: "https://imgur.com/undefined"
+		YavinIV: "Yavin-4.png"
 	},
 	{
-		Hoth: "https://static.wikia.nocookie.net/esstarwars/images/1/1d/Hoth_SWCT.png/revision/latest?cb=20170802030704"
+		Hoth: "Hoth.png"
 	},
 	{
-		Dagobah:
-			"https://static.wikia.nocookie.net/esstarwars/images/1/1c/Dagobah.jpg/revision/latest?cb=20061117132132"
+		Dagobah: "Dagobah.jpg"
 	},
 	{
-		Bespin:
-			"https://static.wikia.nocookie.net/esstarwars/images/2/2c/Bespin_EotECR.png/revision/latest?cb=20170527220537"
+		Bespin: "Bespin.png"
 	},
 	{
-		Endor:
-			"https://static.wikia.nocookie.net/esstarwars/images/5/50/Endor_FFGRebellion.png/revision/latest?cb=20170629163352"
+		Endor: "Endor.png"
 	},
 	{
-		Naboo:
-			"https://static.wikia.nocookie.net/esstarwars/images/f/f0/Naboo_planet.png/revision/latest?cb=20190928214307"
+		Naboo: "Naboo.png"
 	},
 	{
-		Coruscant:
-			"https://static.wikia.nocookie.net/esstarwars/images/9/92/Coruscant_SWCT.png/revision/latest?cb=20200927225715"
+		Coruscant: "Coruscant.png"
 	},
 	{
-		Kamino:
-			"https://static.wikia.nocookie.net/esstarwars/images/5/52/Kamino-DB.png/revision/latest?cb=20160913200828"
+		Kamino: "Kamino.png"
 	}
 ];

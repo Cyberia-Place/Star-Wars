@@ -32,7 +32,7 @@ export const CardPersonajes = () => {
 			<div key={i} style={{ width: "350px", height: "350" }} className="col-4">
 				<div className="card mx-1">
 					<img
-						src={Object.values(imgCh[i])}
+						src={require("../../img/characters/" + Object.values(imgCh[i])[0])}
 						style={{ height: "150px", objectFit: "cover" }}
 						className="card-img-top"
 						alt="..."

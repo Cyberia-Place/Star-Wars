@@ -27,13 +27,11 @@ export const CardPlanetas = () => {
 	};
 
 	const cardList = store.planets.map((element, i) => {
-		const logo = require("./../i.mgAlderaan.jpg");
-
 		return (
 			<div key={i} style={{ width: "350px", height: "350" }} className="col-4">
 				<div className="card mx-1">
 					<img
-						src={logo}
+						src={require("../../img/planets/" + Object.values(imgPl[i])[0])}
 						style={{ height: "150px", objectFit: "cover" }}
 						className="card-img-top"
 						alt="..."
