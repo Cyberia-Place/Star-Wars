@@ -28,7 +28,7 @@ export const imgCh = [
 		BiggsDarklighter: "BiggsDarklighter.png"
 	},
 	{
-		ObiWanKenobi: "ObiWanKenobi.png"
+		ObiWanKenobi: "ObiWanKenobi.jpg"
 	}
 ];
 

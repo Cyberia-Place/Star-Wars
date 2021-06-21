@@ -30,23 +30,23 @@ export const Navbar = () => {
 	});
 
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-dark border-bottom border-warning mb-3">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<img src={require("../../img/sw-logo.png")} style={{ width: "100px", height: "50px" }} />
 			</Link>
 			<div className="ml-auto">
 				<div className="dropdown">
 					<button
-						className="btn btn-secondary dropdown-toggle"
+						className="btn btn-warning dropdown-toggle"
 						type="button"
 						id="dropdownMenuButton"
 						data-toggle="dropdown"
 						aria-haspopup="true"
 						aria-expanded="false">
 						Favorites
-						<span className="badge badge-secondary">{store.favorites.length}</span>
+						<span className="badge badge-secondary mx-1">{store.favorites.length}</span>
 					</button>
-					<div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+					<div className="dropdown-menu dropdown-menu-right text-center" aria-labelledby="dropdownMenuButton">
 						{favoritesList.length == 0 ? "(empty)" : favoritesList}
 					</div>
 				</div>
