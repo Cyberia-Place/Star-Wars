@@ -29,7 +29,7 @@ export const CardPlanetas = () => {
 	const cardList = store.planets.map((element, i) => {
 		return (
 			<div key={i} style={{ width: "350px", height: "350" }} className="col-4">
-				<div className="card mx-1">
+				<div className="card mx-1 bg-dark">
 					<img
 						src={require("../../img/planets/" + Object.values(imgPl[i])[0])}
 						style={{ height: "150px", objectFit: "cover" }}
@@ -37,13 +37,13 @@ export const CardPlanetas = () => {
 						alt="..."
 					/>
 					<div className="card-body">
-						<h5 className="card-title">{element.name}</h5>
-						<p className="card-text text-truncate">
+						<h5 className="card-title text-light">{element.name}</h5>
+						<p className="card-text text-truncate text-light">
 							Some quick example text to build on the card title and make up the bulk of the cards
 							content.
 						</p>
 						<Link to={`/cardView/planets/${i + 1}`}>
-							<button type="button" className="btn btn-primary">
+							<button type="button" className="btn btn-primary text-light">
 								Ver información
 							</button>
 						</Link>
