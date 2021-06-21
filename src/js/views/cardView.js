@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { img } from "../component/imagenes";
+import { imgCh, imgPl } from "../component/imagenes";
 
 export const CardView = () => {
 	const params = useParams();
@@ -23,10 +23,11 @@ export const CardView = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-							<img
-								src={Object.values(img[params.theid])}
-								style={{ height: "400px", width: "500px", objectFit: "cover" }}
-							/>
+								<img
+									src={Object.values(imgCrams.theid])}
+}									style={{ height: "400pxidth: "500px", objectFit: "cover" }}
+								/>
+							)}
 						</div>
 						<div className="col-6">
 							<h1 className="text-center">{info.name}</h1>
@@ -82,9 +83,10 @@ export const CardView = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-							<img
-								src={Object.values(img[params.theid])}
-								style={{ height: "400px", width: "500px", objectFit: "cover" }}
+<img
+                                    src={Object.values(imgPl[params.theid])}
+                                    style={{ height: "400px", width: "500px", objectFit: "cover" }}
+                                />width: "500px", objectFit: "cover" }}
 							/>
 						</div>
 						<div className="col-6">

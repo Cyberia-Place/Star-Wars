@@ -34,7 +34,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({
 					favorites: [...getStore().favorites, newFavorite]
 				});
-				console.log(getStore().favorites);
+				console.log("Añadido", getStore().favorites);
 			},
 			removeFavorite: favorite => {
 				setStore({

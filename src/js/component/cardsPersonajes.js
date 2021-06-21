@@ -51,11 +51,19 @@ export const CardPersonajes = () => {
 						<button
 							type="button"
 							onClick={() => {
-								actions.addFavorite(store.characters[i].name);
+								if (store.characters[i].name) {
+									actions.addFavorite(store.characters[i].name);
+								} else {
+									actions.removeFavorite(store.characters[i].name);
+								}
 								selectButton(i);
 							}}
 							className="btn btn-warning float-right">
-							{selected[i + 1] == i + 1 ? <i className="fas fa-heart" /> : <i className="far fa-heart" />}
+							{store.favorites.includes(store.characters[i].name) ? (
+								<i className="fas fa-heart" />
+							) : (
+								<i className="far fa-heart" />
+							)}
 						</button>
 					</div>
 				</div>

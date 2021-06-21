@@ -4,18 +4,8 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
-	const [dropdown, setDropdown] = useState([]);
 
-	useEffect(
-		() => {
-			setDropdown(store.favorites);
-			console.log("funciona");
-			console.log(dropdown, favoritesList);
-		},
-		[store.favorites]
-	);
-
-	const favoritesList = dropdown.map((element, i) => {
+	const favoritesList = store.favorites.map((element, i) => {
 		return (
 			<a key={i} className="dropdown-item">
 				{element}
