@@ -23,11 +23,12 @@ export const CardView = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-								<img
-									src={Object.values(imgCrams.theid])}
-}									style={{ height: "400pxidth: "500px", objectFit: "cover" }}
-								/>
-							)}
+							<img
+								src={require("../../img/cardViewCh/LukeSkywalker.jpg")}
+								// + Object.values(imgCh[params.theid - 1])[0])
+
+								style={{ height: "400px", width: "500px", objectFit: "cover" }}
+							/>
 						</div>
 						<div className="col-6">
 							<h1 className="text-center">{info.name}</h1>
@@ -45,37 +46,37 @@ export const CardView = () => {
 								hac habitasse platea dictumst.
 							</p>
 						</div>
-					</div>
-					<div className="row">
-						<div className="col-2">
-							Name
-							<br />
-							{info.name}
-						</div>
-						<div className="col-2">
-							Birth-year
-							<br />
-							{info.birth_year}
-						</div>
-						<div className="col-2">
-							Gender
-							<br />
-							{info.gender}
-						</div>
-						<div className="col-2">
-							Height
-							<br />
-							{info.height}
-						</div>
-						<div className="col-2">
-							Skin color
-							<br />
-							{info.skin_color}
-						</div>
-						<div className="col-2">
-							Eye color
-							<br />
-							{info.eye_color}
+						<div className="row">
+							<div className="col-2">
+								Name
+								<br />
+								{info.name}
+							</div>
+							<div className="col-2">
+								Birth-year
+								<br />
+								{info.birth_year}
+							</div>
+							<div className="col-2">
+								Gender
+								<br />
+								{info.gender}
+							</div>
+							<div className="col-2">
+								Height
+								<br />
+								{info.height}
+							</div>
+							<div className="col-2">
+								Skin color
+								<br />
+								{info.skin_color}
+							</div>
+							<div className="col-2">
+								Eye color
+								<br />
+								{info.eye_color}
+							</div>
 						</div>
 					</div>
 				</div>
@@ -83,10 +84,9 @@ export const CardView = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-<img
-                                    src={Object.values(imgPl[params.theid])}
-                                    style={{ height: "400px", width: "500px", objectFit: "cover" }}
-                                />width: "500px", objectFit: "cover" }}
+							<img
+								src={require("../../img/planets/" + Object.values(imgPl[params.theid - 1])[0])}
+								style={{ height: "400px", width: "500px", objectFit: "cover" }}
 							/>
 						</div>
 						<div className="col-6">

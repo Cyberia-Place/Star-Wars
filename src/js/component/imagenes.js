@@ -6,7 +6,7 @@ export const imgCh = [
 		C3PO: "C3PO.jpg"
 	},
 	{
-		R2D2: "r2d2.jpg"
+		R2D2: "R2D2.jpg"
 	},
 	{
 		DarthVader: "DarthVader.jpg"
