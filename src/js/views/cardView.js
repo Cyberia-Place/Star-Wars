@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { imgCh, imgPl } from "../component/imagenes";
+import { viewImgCh, imgPl } from "../component/imagenes";
 
 export const CardView = () => {
 	const params = useParams();
@@ -24,9 +24,7 @@ export const CardView = () => {
 					<div className="row">
 						<div className="col-6">
 							<img
-								src={require("../../img/cardViewCh/LukeSkywalker.jpg")}
-								// + Object.values(imgCh[params.theid - 1])[0])
-
+								src={require("../../img/cardViewCh/" + Object.values(viewImgCh[params.theid - 1])[0])}
 								style={{ height: "400px", width: "500px", objectFit: "cover" }}
 							/>
 						</div>
@@ -46,37 +44,38 @@ export const CardView = () => {
 								hac habitasse platea dictumst.
 							</p>
 						</div>
-						<div className="row">
-							<div className="col-2">
-								Name
-								<br />
-								{info.name}
-							</div>
-							<div className="col-2">
-								Birth-year
-								<br />
-								{info.birth_year}
-							</div>
-							<div className="col-2">
-								Gender
-								<br />
-								{info.gender}
-							</div>
-							<div className="col-2">
-								Height
-								<br />
-								{info.height}
-							</div>
-							<div className="col-2">
-								Skin color
-								<br />
-								{info.skin_color}
-							</div>
-							<div className="col-2">
-								Eye color
-								<br />
-								{info.eye_color}
-							</div>
+					</div>
+					<hr />
+					<div className="row">
+						<div className="col-2">
+							Name
+							<br />
+							{info.name}
+						</div>
+						<div className="col-2">
+							Birth-year
+							<br />
+							{info.birth_year}
+						</div>
+						<div className="col-2">
+							Gender
+							<br />
+							{info.gender}
+						</div>
+						<div className="col-2">
+							Height
+							<br />
+							{info.height}
+						</div>
+						<div className="col-2">
+							Skin color
+							<br />
+							{info.skin_color}
+						</div>
+						<div className="col-2">
+							Eye color
+							<br />
+							{info.eye_color}
 						</div>
 					</div>
 				</div>
