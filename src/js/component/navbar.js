@@ -20,7 +20,7 @@ export const Navbar = () => {
 	});
 
 	return (
-		<nav className="navbar navbar-light bg-dark border-bottom border-warning mb-3">
+		<nav className="navbar navbar-light border-bottom border-warning mb-3" style={{ backgroundColor: "#191919" }}>
 			<Link to="/">
 				<img src={require("../../img/sw-logo.png")} style={{ width: "100px", height: "50px" }} />
 			</Link>

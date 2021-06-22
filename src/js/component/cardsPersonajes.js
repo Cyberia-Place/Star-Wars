@@ -44,14 +44,14 @@ export const CardPersonajes = () => {
 							content.
 						</p>
 						<Link to={`/cardView/people/${i + 1}`}>
-							<button type="button" className="btn btn-primary text-light">
+							<button type="button" className="btn btn-danger text-light">
 								Ver información
 							</button>
 						</Link>
 						<button
 							type="button"
 							onClick={() => {
-								if (store.characters[i].name) {
+								if (!store.favorites.includes(store.characters[i].name)) {
 									actions.addFavorite(store.characters[i].name);
 								} else {
 									actions.removeFavorite(store.characters[i].name);

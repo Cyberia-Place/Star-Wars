@@ -18,7 +18,7 @@ export const CardView = () => {
 	}, []);
 
 	return (
-		<div className="jumbotron">
+		<div className="jumbotron rounded-0 mt-4" style={{ backgroundColor: "#191919" }}>
 			{params.type == "people" ? (
 				<div className="container">
 					<div className="row">
@@ -29,14 +29,14 @@ export const CardView = () => {
 							/>
 						</div>
 						<div className="col-6">
-							<h1 className="text-center">{info.name}</h1>
-							<p>
+							<h1 className="text-center text-white">{info.name}</h1>
+							<p className="text-white">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sem ac lectus
 								accumsan egestas in a arcu. Pellentesque habitant morbi tristique senectus et netus et
 								malesuada fames ac turpis egestas. Aenean consequat consequat convallis. Maecenas vitae
 								mi semper, vulputate lorem eu, mollis elit.{" "}
 							</p>
-							<p>
+							<p className="text-white">
 								Mauris lobortis nibh sit amet pretium blandit. Curabitur maximus, justo vel posuere
 								finibus, arcu dui tincidunt ante, vel varius leo massa non felis. Donec vel dolor lorem.
 								Vivamus eget erat augue. Aliquam bibendum vel lectus vitae dignissim. Aenean cursus
@@ -46,7 +46,7 @@ export const CardView = () => {
 						</div>
 					</div>
 					<hr />
-					<div className="row">
+					<div className="row text-white">
 						<div className="col-2">
 							Name
 							<br />
@@ -89,14 +89,14 @@ export const CardView = () => {
 							/>
 						</div>
 						<div className="col-6">
-							<h1 className="text-center">{info.name}</h1>
-							<p>
+							<h1 className="text-center text-white">{info.name}</h1>
+							<p className="text-white">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sem ac lectus
 								accumsan egestas in a arcu. Pellentesque habitant morbi tristique senectus et netus et
 								malesuada fames ac turpis egestas. Aenean consequat consequat convallis. Maecenas vitae
 								mi semper, vulputate lorem eu, mollis elit.{" "}
 							</p>
-							<p>
+							<p className="text-white">
 								Mauris lobortis nibh sit amet pretium blandit. Curabitur maximus, justo vel posuere
 								finibus, arcu dui tincidunt ante, vel varius leo massa non felis. Donec vel dolor lorem.
 								Vivamus eget erat augue. Aliquam bibendum vel lectus vitae dignissim. Aenean cursus
@@ -106,7 +106,7 @@ export const CardView = () => {
 						</div>
 					</div>
 					<hr />
-					<div className="row">
+					<div className="row text-white">
 						<div className="col-2">
 							Name
 							<br />

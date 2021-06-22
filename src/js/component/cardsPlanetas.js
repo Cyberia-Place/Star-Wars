@@ -8,9 +8,9 @@ export const CardPlanetas = () => {
 
 	useEffect(
 		() => {
-			setSelected(new Array(store.characters.length + 1).fill(""));
+			setSelected(new Array(store.planets.length + 1).fill(""));
 		},
-		[store.characters]
+		[store.planets]
 	);
 
 	const [selected, setSelected] = useState();
@@ -43,18 +43,26 @@ export const CardPlanetas = () => {
 							content.
 						</p>
 						<Link to={`/cardView/planets/${i + 1}`}>
-							<button type="button" className="btn btn-primary text-light">
+							<button type="button" className="btn btn-danger text-light">
 								Ver información
 							</button>
 						</Link>
 						<button
 							type="button"
 							onClick={() => {
-								actions.addFavorite(store.characters[i].name);
+								if (!store.favorites.includes(store.planets[i].name)) {
+									actions.addFavorite(store.planets[i].name);
+								} else {
+									actions.removeFavorite(store.planets[i].name);
+								}
 								selectButton(i);
 							}}
 							className="btn btn-warning float-right">
-							{selected[i + 1] == i + 1 ? <i className="fas fa-heart" /> : <i className="far fa-heart" />}
+							{store.favorites.includes(store.planets[i].name) ? (
+								<i className="fas fa-heart" />
+							) : (
+								<i className="far fa-heart" />
+							)}
 						</button>
 					</div>
 				</div>
